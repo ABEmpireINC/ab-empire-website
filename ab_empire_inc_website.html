@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AB Empire Inc. | Unified Services Hub</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #1a1a1a;
+            --accent-color: #555555;
+            --light-bg: #0d0d0d;
+            --dark-text: #111;
+        }
+
+        body { 
+            margin: 0; 
+            font-family: 'Open Sans', sans-serif; 
+            color: var(--dark-text);
+        }
+
+        /* VIDEO BACKGROUND */
+        #bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            object-fit: cover;
+            opacity: 0.25;
+        }
+
+        header { 
+            background: rgba(75,0,130,0.85);
+            color: white; 
+            padding: 60px 20px; 
+            text-align: center;
+        }
+        nav { display: flex; justify-content: center; background: rgba(1,50,32,0.9); padding: 10px; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: 600; font-size: 1rem; }
+        .section { padding: 40px; max-width: 1100px; margin: auto; }
+        h2 { color: var(--primary-color); font-weight: 700; font-size: 2rem; }
+        h3 { font-size: 1.2rem; font-weight: 600; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: rgba(255,255,255,0.95); border-radius: 10px; padding: 20px; box-shadow: 0px 4px 12px rgba(0,0,0,0.1); text-align:center; }
+        .crm-box { background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 12px rgba(0,0,0,0.1); }
+        footer { background: rgba(1,50,32,0.9); color: white; text-align: center; padding: 20px; margin-top: 30px; font-weight: 600; }
+        select, input, textarea { width: 100%; padding: 8px; margin: 6px 0; font-size: 1rem; }
+        button { cursor: pointer; font-weight: 600; font-size: 1rem; padding: 12px 20px; border: none; border-radius: 5px; background: var(--primary-color); color: white; }
+        a { font-weight: 600; text-decoration: none; color: var(--accent-color); }
+    </style>
+</head>
+<body>
+
+    <!-- FULL VIDEO BACKGROUND -->
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="e988436e-f376-4631-9b98-78193eb96ef4.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <h1 style="font-size:2.4rem; margin:0; letter-spacing:1px;">AB Empire Inc. — Business & Tax Solutions</h1>
+        <p style="margin:12px 0 0; font-size:1.1rem; max-width:900px; margin-left:auto; margin-right:auto; font-weight:600;">Integrated services for small businesses and nonprofit startups, supporting community initiatives and tax solutions.</p>
+        <div style="margin-top:20px;">
+            <a href="#services" style="background:var(--accent-color); color:var(--primary-color); padding:14px 20px; border-radius:6px; font-weight:600;">Our Services</a>
+            <a href="#portal" style="background:rgba(0,0,0,0.2); color:white; padding:14px 20px; border-radius:6px; font-weight:600;">Secure Client Portal</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#realestate">Real Estate Hub</a>
+        <a href="#ministry">SHOM Ministry</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Business Formation & Support</h3>
+                <p>Full-service support for business and nonprofit setups, with guidance for community impact projects.</p>
+                <a href="#intake-creative">Submit an Intake Form</a>
+            </div>
+            <div class="card">
+                <h3>Financial & Tax Guidance</h3>
+                <p>Inclusive tax preparation and bookkeeping, with special focus on low-income clients.</p>
+                <a href="#intake-tax">Submit an Intake Form</a>
+            </div>
+            <div class="card">
+                <h3>Property & Investment Solutions</h3>
+                <p>Support and guidance for property-related projects and investment opportunities.</p>
+                <a href="#intake-realty">Submit an Intake Form</a>
+            </div>
+            <div class="card">
+                <h3>Community & Case Management</h3>
+                <p>Guidance and support for emerging community initiatives and resource management.</p>
+                <a href="#intake-walk">Submit an Intake Form</a>
+            </div>
+            <div class="card">
+                <h3>Training & Professional Development</h3>
+                <p>Programs in job readiness, life skills, and AB Empire business support services.</p>
+                <a href="#intake-training">Submit an Intake Form</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="realestate" class="section">
+        <h2>Real Estate Hub</h2>
+        <div class="crm-box">
+            <h3>Lead Intake</h3>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfz1-example-google-form-id/formResponse" method="POST">
+                <label>Name:</label>
+                <input type="text" name="entry.1000000" required />
+                <label>Address:</label>
+                <input type="text" name="entry.1000001" required />
+                <label>Phone:</label>
+                <input type="text" name="entry.1000002" required />
+                <label>Details:</label>
+                <textarea name="entry.1000003" style="height:80px" required></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="ministry" class="section">
+        <h2>Safe Housing Outreach Ministry (SHOM)</h2>
+        <p><strong>Contact SHOM:</strong><br>📞 313-405-9606<br>📧 support@shom.org</p>
+        <div class="grid">
+            <div class="card">
+                <h3>Emergency & Transitional Support</h3>
+                <p>Housing and family stability services</p>
+                <a href="#intake-shom">Submit an Intake Form</a>
+            </div>
+            <div class="card">
+                <h3>Child & Youth Services</h3>
+                <p>Daycare, recreation, and learning opportunities</p>
+                <a href="#intake-shom">Submit an Intake Form</a>
+            </div>
+            <div class="card">
+                <h3>Veteran & Community Assistance</h3>
+                <p>Food, clothing, social support, and veteran-focused programs</p>
+                <a href="#intake-shom">Submit an Intake Form</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>📞 313-986-1446<br>📧 info@abempires.com</p>
+    </section>
+
+    <footer>
+        AB Empire Inc © 2025 – All Rights Reserved
+    </footer>
+
+</body>
+</html>
